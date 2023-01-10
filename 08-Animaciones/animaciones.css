@@ -1,0 +1,56 @@
+* {
+    background-color: #0F0F0F;
+}
+h1 {
+    color: transparent;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(fondo.jpg);
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    background-image: url(Logo.png);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: center;
+
+}
+
+.btn-modern {
+    background-color:  rgb(221, 94, 35);
+    border: none;
+    border-bottom: 2px solid rgb(175, 69, 19);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px 40px;
+    color: darkslategray;
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-modern::after{
+    content: "Click aquí";
+}
+
+.btn-modern:hover::after {
+    content: "No seas tímido";
+}
+
+.btn-modern:hover {
+    background-color:  rgb(45, 116, 209);
+    border-bottom: 2px solid rgb(30, 75, 134);
+    color: bisque;
+    font-size: large;
+    box-shadow: 0 0 10px rgba(233, 62, 62, 0.897);
+    transition: all 0.4s;
+    transform: translateY(-5px);
+}
